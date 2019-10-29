@@ -1,8 +1,45 @@
-.wrapper {
-    text-align: center;
-}
+
 
 .button {
+    margin-top:370px;
     position: absolute;
-    top: 50%;
+    width:120px;
+    height:50px;
+    border-width:2px;
+    border-radius: 15px;
+    border-style: inset;
+    font-size: 20px;
+    font-weight:bold;
+    color: white;
+    border-color:rgba(0,0,0, 1);
+    background-color: rgba(0,0,0, 0.8);
+    animation:btn;
+    position:relative;
+    animation-duration:3s;
+    animation-fill-mode:relative;
+}
+@keyframes btn{
+    0% {left:-900px;}
+    100%{left:0px;}
+}
+body
+{
+	background-color:#12475f;
+	text-align:center;
+}
+h1
+{   
+    position: relative;
+    color:  white;  
+    animation:headi;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes headi{
+0%{top:-50px;}
+100%{top:300px;}
+}
+.button:hover{
+    background-color:white;
+    color:black;
 }
